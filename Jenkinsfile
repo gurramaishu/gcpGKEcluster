@@ -35,7 +35,7 @@ pipeline {
 		    steps {
 			    sh 'whoami'
 			    script {
-				    myimage = docker.build("aishu2000/helloworld:${env.BUILD_ID}")
+				    myimage = docker.build("aishu2000/helloworld:1${env.BUILD_ID}")
 			    }
 		    }
 	    }
